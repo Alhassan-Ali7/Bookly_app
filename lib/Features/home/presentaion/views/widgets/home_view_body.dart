@@ -1,4 +1,4 @@
-import 'package:bookly_app/Features/home/presentaion/views/widgets/custom__list_view__item.dart';
+import 'package:bookly_app/Features/home/presentaion/views/widgets/custom_list_view_item.dart';
 import 'package:bookly_app/Features/home/presentaion/views/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 
