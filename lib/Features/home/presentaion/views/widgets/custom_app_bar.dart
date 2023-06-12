@@ -2,13 +2,13 @@ import 'package:bookly_app/generated/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class CustomAppBAr extends StatelessWidget {
-  const CustomAppBAr({super.key});
+class CustomAppBar extends StatelessWidget {
+  const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24.0,vertical: 40),
+      padding: const EdgeInsets.only(top: 44, bottom: 42, left: 30, right: 30),
       child: Row(
         children: [
           Image.asset(
