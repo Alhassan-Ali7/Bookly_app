@@ -2,29 +2,17 @@ import 'Epub.dart';
 import 'Pdf.dart';
 
 class AccessInfo {
-  String? country;
-  String? viewability;
-  bool? embeddable;
-  bool? publicDomain;
-  String? textToSpeechPermission;
-  Epub? epub;
-  Pdf? pdf;
-  String? webReaderLink;
-  String? accessViewStatus;
-  bool? quoteSharingAllowed;
-
   AccessInfo({
-    this.country,
-    this.viewability,
-    this.embeddable,
-    this.publicDomain,
-    this.textToSpeechPermission,
-    this.epub,
-    this.pdf,
-    this.webReaderLink,
-    this.accessViewStatus,
-    this.quoteSharingAllowed,
-  });
+      this.country, 
+      this.viewability, 
+      this.embeddable, 
+      this.publicDomain, 
+      this.textToSpeechPermission, 
+      this.epub, 
+      this.pdf, 
+      this.webReaderLink, 
+      this.accessViewStatus, 
+      this.quoteSharingAllowed,});
 
   AccessInfo.fromJson(dynamic json) {
     country = json['country'];
@@ -38,6 +26,16 @@ class AccessInfo {
     accessViewStatus = json['accessViewStatus'];
     quoteSharingAllowed = json['quoteSharingAllowed'];
   }
+  String? country;
+  String? viewability;
+  bool? embeddable;
+  bool? publicDomain;
+  String? textToSpeechPermission;
+  Epub? epub;
+  Pdf? pdf;
+  String? webReaderLink;
+  String? accessViewStatus;
+  bool? quoteSharingAllowed;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
@@ -57,4 +55,5 @@ class AccessInfo {
     map['quoteSharingAllowed'] = quoteSharingAllowed;
     return map;
   }
+
 }

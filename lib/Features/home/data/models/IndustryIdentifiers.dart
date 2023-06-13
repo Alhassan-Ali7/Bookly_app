@@ -1,16 +1,14 @@
 class IndustryIdentifiers {
-  String? type;
-  String? identifier;
-
   IndustryIdentifiers({
-    this.type,
-    this.identifier,
-  });
+      this.type, 
+      this.identifier,});
 
   IndustryIdentifiers.fromJson(dynamic json) {
     type = json['type'];
     identifier = json['identifier'];
   }
+  String? type;
+  String? identifier;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
@@ -18,4 +16,5 @@ class IndustryIdentifiers {
     map['identifier'] = identifier;
     return map;
   }
+
 }

@@ -1,19 +1,17 @@
 class SaleInfo {
-  String? country;
-  String? saleability;
-  bool? isEbook;
-
   SaleInfo({
-    this.country,
-    this.saleability,
-    this.isEbook,
-  });
+      this.country, 
+      this.saleability, 
+      this.isEbook,});
 
   SaleInfo.fromJson(dynamic json) {
     country = json['country'];
     saleability = json['saleability'];
     isEbook = json['isEbook'];
   }
+  String? country;
+  String? saleability;
+  bool? isEbook;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
@@ -22,4 +20,5 @@ class SaleInfo {
     map['isEbook'] = isEbook;
     return map;
   }
+
 }
