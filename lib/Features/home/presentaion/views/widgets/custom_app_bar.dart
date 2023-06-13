@@ -1,4 +1,4 @@
-import 'package:bookly_app/generated/assets.dart';
+import 'package:bookly_app/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -12,7 +12,7 @@ class CustomAppBar extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(
-            Assets.imagesLogo,
+            AssetsData.logo,
             height: 16,
           ),
           const Spacer(),
