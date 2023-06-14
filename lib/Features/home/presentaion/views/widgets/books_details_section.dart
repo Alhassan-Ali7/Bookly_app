@@ -14,7 +14,9 @@ class BookDetailsSection extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * 0.2, vertical: 30),
-          child: const CustomBookImage(),
+          child: const  CustomBookImage(
+            imageUrl: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg',
+          ),
         ),
         const SizedBox(
           height: 5,
