@@ -19,14 +19,15 @@ class SimilarBooksListView extends StatelessWidget {
                 .size
                 .height * 0.15,
             child: ListView.builder(
+              itemCount: state.books.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return const Padding(
-                  padding: EdgeInsets.only(
+                return  Padding(
+                  padding: const EdgeInsets.only(
                     left: 10,
                   ),
                   child: CustomBookImage(
-                    imageUrl: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg',
+                    imageUrl: state.books[index].volumeInfo!.imageLinks?.thumbnail ?? '',
                   ),
                 );
               },
